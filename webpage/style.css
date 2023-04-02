@@ -1,0 +1,206 @@
+/**1.4.2023**/
+/***AECHO internship task, to design and code the front page***/
+
+html{
+    scroll-behavior: smooth;
+} 
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-dark-green: #006400;
+    --color-forest-green: #228B22;
+    --color-lime-green: #32cd32;
+    --color-turquiose: #40E0D0;
+    --color-light-blue: #ADD8E6;
+    --color-navy-blue: #000080;
+    --color-royal-blue: #4169E1;
+    --color-dark-blue: #00008B;
+}
+
+@media screen and (min-width: 968px) {
+	:root {
+	  --big-font-size: 3rem;
+	  --h1-font-size: 2.25rem;
+	  --h2-font-size: 1.5rem;
+	  --h3-font-size: 1.25rem;
+	  --normal-font-size: 1rem;
+	  --small-font-size: 0.875rem;
+	  --smaller-font-size: 0.813rem;
+	}
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 1.4%;
+  z-index: 100;
+}
+
+.navbar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li a{
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+
+.navbar-nav{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    font-size: larger;
+    transition: 0.3s;
+
+}
+
+#logo-font{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+.navbar-logo{
+    color: var(--color-royal-blue);
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+
+.navbar-logo:hover{
+    color: var(--color-royal-blue);
+    transform: scale(1.2);
+    -webkit-text-stroke: 1px var(--color-dark-blue);
+    -webkit-text-stroke-color: var(--color-dark-blue);
+    transform: translateY(-5px);
+}
+
+.navbar-logo:focus{
+    color: var(--color-royal-blue);
+    transform: scale(1.2);
+    -webkit-text-stroke: 1px var(--color-dark-blue);
+    -webkit-text-stroke-color: var(--color-dark-blue);
+    transform: translateY(-5px);
+}
+
+/*background of hero part css*/
+
+.herobg{
+  padding-left: 0.2px;
+  padding-right: 0.2px;
+}
+
+.container-fluid.main{
+    position: static; /* To make the navbar positions relative to this container */
+    padding: 0;
+    }
+
+
+  .carousel .background {
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+  
+  @media (max-width:991px) {
+    .carousel .background {
+      background-size: cover; /* To make the background image looks good */
+    }
+  }
+  
+  .carousel .background.a {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://drive.google.com/uc?export=view&id=1bkqU-a1azbw0al1Qy2CUhVbmXC0JyqYo");
+  }
+  
+  .carousel .background.b {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://drive.google.com/uc?id=1RH3PPCIGr682Gv9toou4EfpLCGbfbPAj");
+  }
+  
+  .carousel .background.c {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://drive.google.com/uc?id=1tGD_JoF3Yk7St25qCJpjQLtVYIFp6VrV");
+  }
+
+  .carousel .background.d {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://drive.google.com/uc?export=view&id=1i09-qQ6osyX2qXY2aIBtIl0aesoszwc4");
+  }
+  
+  .carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition: opacity 0.5s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+  }
+  
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }
+  
+  /* CSS Hack to trigger GPU for smooth transition */
+  @media all and (transform-3d),
+  (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
