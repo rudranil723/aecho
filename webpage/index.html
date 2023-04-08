@@ -1,72 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Aecho</title>
-    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!--partial html-->
     <html>
       <head>
         <!--for including all necessry or unnecessary links -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Roboto+Slab:wght@600&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Roboto+Slab:wght@600&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Roboto+Slab:wght@600&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
       </head>
       <body>
-        <!--partial-->
-        <div class="pageloader" id="pre-loader">
-          <div class="sk-circle">
-            <div class="sk-circle1 sk-child"></div>
-            <div class="sk-circle2 sk-child"></div>
-            <div class="sk-circle3 sk-child"></div>
-            <div class="sk-circle4 sk-child"></div>
-            <div class="sk-circle5 sk-child"></div>
-            <div class="sk-circle6 sk-child"></div>
-            <div class="sk-circle7 sk-child"></div>
-            <div class="sk-circle8 sk-child"></div>
-            <div class="sk-circle9 sk-child"></div>
-            <div class="sk-circle10 sk-child"></div>
-            <div class="sk-circle11 sk-child"></div>
-            <div class="sk-circle12 sk-child"></div>
-          </div>
-        </div>
         <header>
-          <!--starting with the nav bar-->
+          <div class="pageloader" id="pre-loader">
+            <div class="sk-circle">
+              <div class="sk-circle1 sk-child"></div>
+              <div class="sk-circle2 sk-child"></div>
+              <div class="sk-circle3 sk-child"></div>
+              <div class="sk-circle4 sk-child"></div>
+              <div class="sk-circle5 sk-child"></div>
+              <div class="sk-circle6 sk-child"></div>
+              <div class="sk-circle7 sk-child"></div>
+              <div class="sk-circle8 sk-child"></div>
+              <div class="sk-circle9 sk-child"></div>
+              <div class="sk-circle10 sk-child"></div>
+              <div class="sk-circle11 sk-child"></div>
+              <div class="sk-circle12 sk-child"></div>
+            </div>
+          </div>
           <div class="navbar-container">
             <nav class="navbar">
               <ul>
                 <li class="nav-link"><a href="#home">Home</a></li>
                 <li class="nav-link"><a href="#service">Service</a></li>
-                <li class="nav-link"><a href="About us">About us</a></li>
+                <li class="nav-link"><a href="#About us">About us</a></li>
                 <div class="site-branding">
                   <div class="site-logo">
                     <span class="custom-logo-link">
@@ -78,36 +50,62 @@
                     </span>
                   </div>
                 </div>
-                <li class="nav-link"><a href="testimonial">testimonial</a></li>
-                <li class="nav-link"><a href="blog">Blog</a></li>
-                <li class="nav-link"><a href="Contact">Contact us</a></li>
+                <li class="nav-link"><a href="#testimonial">testimonial</a></li>
+                <li class="nav-link"><a href="#blog">Blog</a></li>
+                <li class="nav-link"><a href="#Contact">Contact us</a></li>
+                <li id="burger"></li>
               </ul>
             </nav>
           </div>
-          <!--ending with the nam bar-->
-          <div class="herobg">
-            <div class="container-fluid main">
-              <div
-                id="myCarousel"
-                class="carousel carousel-fade slide"
-                data-ride="carousel"
-                data-interval="3000"
-              >
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active background a"></div>
-                  <div class="item background b"></div>
-                  <div class="item background c"></div>
-                  <div class="item background d"></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </header>
+
+        <main>
+          <article id="hero-1" style="--i: 5">
+            <div class="hero-info">
+              <h2>Let AECHO</h2>
+              <h1>turn your data into insights</h1>
+            </div>
+            <div class="hero-image hi-1"></div>
+          </article>
+
+          <article id="hero-2" style="--i: 4">
+            <div class="hero-info">
+              <h2>AECHO</h2>
+              <h1>Where data meets intelligence</h1>
+            </div>
+            <div class="hero-image hi-2"></div>
+          </article>
+
+          <article id="hero-3" style="--i: 3">
+            <div class="hero-info">
+              <h2>unlock the potential of data</h2>
+              <h1>with AECHO</h1>
+            </div>
+            <div class="hero-image hi-3"></div>
+          </article>
+
+          <article id="hero-4" style="--i: 2">
+            <div class="hero-info">
+              <h2>Take control of your data</h2>
+              <h1></h1>
+            </div>
+            <div class="hero-image hi-4"></div>
+          </article>
+
+          <article id="hero-5" style="--i: 1">
+            <div class="hero-info">
+              <h2>we simplify</h2>
+              <h1>your data analysis</h1>
+            </div>
+            <div class="hero-image hi-5"></div>
+          </article>
+          <section></section>
+        </main>
       </body>
     </html>
-    <!--partial-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+
+    <!-- partial -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
