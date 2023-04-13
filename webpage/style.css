@@ -314,6 +314,131 @@ article {
   background-image: url("https://drive.google.com/uc?id=17rIGEphvkQNrOHZ7Cz-X2360qTZH1WRN");
 }
 
+/**About us section**/
+
+
+
+ .aboutus-header{
+ margin-top: 15px;
+  font-family: 'poppins', sans-serif, 'arial';
+  font-size: 58px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-steel-blue);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-shadow: var(--color-steel-blue) 2px 2px 6px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.aboutusrow{
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-xs-4-about1,
+.col-xs-4-about2,
+.col-xs-4-about3,
+.col-xs-4-about4 {
+  width: calc(25% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.box {
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+} 
+
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover .box-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.box p{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.aboutus-partners-heading{
+  font-family: 'poppins', sans-serif, 'arial';
+  font-size: 58px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-steel-blue);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.aboutus-partners-subheading{
+  font-family: 'poppins', sans-serif, 'arial';
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-steel-blue);
+  margin-top: 15px;
+  margin-left: 225px;
+  margin-right: 225px;
+  line-height: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*contact us section*/
 
