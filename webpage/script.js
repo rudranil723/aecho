@@ -5,6 +5,26 @@ window.addEventListener("load", function () {
 });
 
 
+const navbar = document.querySelector('.navbar');
+const whiteBar = document.querySelector('.white-bar');
+const navLinks = document.querySelectorAll('.navbar ul li a');
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > navbar.offsetHeight) {
+    whiteBar.classList.add('active');
+    navLinks.forEach(function(link) {
+      link.style.color = 'blue';
+    });
+  } else {
+    whiteBar.classList.remove('active');
+    navLinks.forEach(function(link) {
+      link.style.color = 'white';
+    });
+  }
+});
+
+
+
 // $('.carousel').carousel({
 //   pause: "false" /* Change to true to make it paused when your mouse cursor enter the background */
 // });
@@ -20,6 +40,36 @@ window.addEventListener("load", function () {
 //     document.getElementById("navbar").style.background = "none";
 //   }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
