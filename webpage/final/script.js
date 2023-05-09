@@ -1,4 +1,4 @@
-
+// js for the nav bar
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
@@ -13,9 +13,10 @@ hamburger.addEventListener('click', ()=>{
     //Hamburger Animation
     hamburger.classList.toggle("toggle");
 });
-
+// end of js for the navbar
 
 // this javas is for the home page structure
+
 let overlay = document.querySelector("section");
 let heroImage = document.querySelector(".hero-image");
 let showMenu = false;
@@ -98,5 +99,5 @@ while (i < 5) {
   i++;
 }
 
-
+// end of js for the home page
 
