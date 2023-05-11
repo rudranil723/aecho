@@ -101,3 +101,15 @@ while (i < 5) {
 
 // end of js for the home page
 
+window.onscroll = function() {stickyNavbar()};
+
+var navbar = document.getElementsByTagName("nav")[0];
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
