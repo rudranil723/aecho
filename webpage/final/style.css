@@ -535,7 +535,7 @@ nav.sticky a {
   background-attachment: fixed;
   padding: 100px 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .parallax {
@@ -628,7 +628,7 @@ nav.sticky a {
 
 @media (max-width: 480px) {
   #aboutus{
-    height: 120vh;
+    height: 100%;
     width: 100%;
     padding: 15px 0;
   }
@@ -646,3 +646,125 @@ nav.sticky a {
 }
 
 }
+
+
+/*the partners section css*/
+
+#partners{
+  margin-top: 5%;
+}
+
+.aboutus-partners-heading{
+  font-family: 'Poppins', sans-serif, 'arial';
+  font-size: 50px;
+  font-style: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.aboutus-partners-subheading {
+  font-family: 'Poppins', sans-serif, 'arial';
+  font-size: 20px;
+  font-style: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  font-weight: 400;
+}
+.aboutus-partners-subheading p{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 20px; 
+  text-align: center;
+}
+
+@media (max-width: 480px){
+  .aboutus-partners-subheading p{
+    font-size: 10px;
+    margin: 0;
+  }
+  
+  .aboutus-partners-subheading p{
+    font-size: 15px;
+  }
+
+}
+
+.partners-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider{
+  color: var(--color-white);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+  width: 85%;
+  margin-top: 5%;
+}
+
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+
+@media (max-width: 480px){
+  .slider{
+    height: 10vh;
+  }
+}
+/***css for the about us section***/
