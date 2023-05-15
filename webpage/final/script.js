@@ -148,3 +148,4 @@ const onChange = () => {
 this.wallop.on('change', onChange);
 
 
+// end of about us section the above js is for the partners section 
