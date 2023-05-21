@@ -333,7 +333,8 @@ nav.sticky a {
 
 
 .blur-bg {
-  background-image: url('https://drive.google.com/uc?id=1bQhUFh5U7wzAdxdSA9mlIHc2citHUBOS');
+  /* background-image: url('https://drive.google.com/uc?id=1bQhUFh5U7wzAdxdSA9mlIHc2citHUBOS'); */
+  background-image: url('https://drive.google.com/uc?id=1lwmlM4hQq0o0RngTkfGg8jpohJw08bWv');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -360,7 +361,7 @@ nav.sticky a {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: 600;
   line-height: 1.5;
   text-align: center;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
@@ -530,7 +531,8 @@ nav.sticky a {
 /***about us section css start***/
 
 #aboutus {
-  background-image: url('https://picsum.photos/200/300');
+  /* background-image: url('https://picsum.photos/200/300'); */
+  background-image: url('https://drive.google.com/uc?id=1_Jib3n6Iuqr3DjCQH-HUqaekzgCuXzpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -649,7 +651,7 @@ nav.sticky a {
 }
 
 /*the partners section css*/
-
+/* 
 #partners{
   margin-top: 5%;
 }
@@ -776,5 +778,9 @@ nav.sticky a {
     width: 100px;
     z-index: 1;
   }
-}
+} */
+
+/*end of the partners section css*/
+
 /***css for the about us section***/
+
